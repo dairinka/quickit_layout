@@ -5,11 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   <title>Quickit layout</title>
 </head>
 <body>
   <div class="wrapper">
-    <header>
+    <div class="decor1"><img src="./img/splash_1.png"></div>
+    <header class="header">
       <div class="header__logo">
         <img src="./icons/logo.svg" alt="logo">
       </div>
@@ -20,31 +26,35 @@
         <li>Pricing</li>
         <li>Contacts</li>
       </ul>
-      <div>
-        <span><img src="./icons/language.svg" alt="choose the language"></span>
+      <div class="user-block">
+        <span class="lang-wrap"><img src="./icons/language.svg" alt="choose the language"></span>
         <span><a href="">Log in</a></span>
       </div>
-      <button class="btn btn__demo">Request a demo</button>
+      <div class="btn-wrap">
+        <button class="btn btn__demo">Request a demo</button>
+      </div>
     </header>
-    <main>
+    <main class="main">
       <section class="section hero">
-        <h1>Welcome to the Future of Landings</h1>
-        <h3 class="h3 h3__regular">Create screens right in your Figma. Connect different blocks and create awesome landings. Yes, it just takes a few minutes!</h3>
-        <div>
-          <button class="btn btn__demo">Request a demo</button>
-          <button class="btn btn__video">Watch video</button>
+        <div class="hero__content-wrap">
+          <h1 class="h1">Welcome to the Future of Landings</h1>
+          <h3 class="h3 h3__regular">Create screens right in your Figma. Connect different blocks and create awesome landings. Yes, it just takes a few minutes!</h3>
+          <div class="hero__btn-wrap">
+            <button class="btn btn__demo">Request a demo</button>
+            <button class="btn btn__video">Watch video</button>
+          </div>
         </div>
         <div class="screenshots">
-          <img src="./img/screen1.png" alt="">
-          <img src="./img/screen2.png" alt="">
-          <img src="./img/screen3.png" alt="">
-          <img src="./img/screen4.png" alt="">
+          <img class="screen1" src="./img/screen1.png" alt="">
+          <img class="screen2" src="./img/screen2.png" alt="">
+          <img class="screen3" src="./img/screen3.png" alt="">
+          <img class="screen4" src="./img/screen4.png" alt="">
         </div>
       </section>
       <section class="section customers">
         <h2 class="hidden">Our customers</h2>
-        <h3 class="h3 h3__bold"></h3>
-        <ul>
+        <h3 class="h3">Trusted by the fastest growing companies</h3>
+        <ul class="customers-block">
           <li><span><img src="./icons/figma.svg" alt="Figma logo"></span><span>Figma</span></li>
           <li><span><img src="./icons/sketch.svg" alt="Sketch logo"></span><span>Sketch</span></li>
           <li><span><img src="./icons/pinterest.svg" alt="Pinterest logo"></span><span>Pinterest</span></li>
@@ -54,12 +64,15 @@
         </ul>
       </section>
       <section class="section info-screen">
-        <h2 class="hidden">Information</h2>
-        <img src="./img/dashboard_screenshot.png" alt="dashboard screenshot">
+        <div class="info-screen-wrap">
+          <h2 class="hidden">Information</h2>
+          <img src="./img/dashboard_screenshot.png" alt="dashboard screenshot">
+        </div>
+        <div class="decor2"><img src="./img/splash_2.png"></div>
       </section>
       <section class="section feature">
-        <div class="section__content-wrapper">
-          <h2 class="section__h2">Create layout</h2>
+        <div class="feature__content-wrapper">
+          <h2 class="section__h2">Create layouts</h2>
           <strong class="section__description">Move fast, stay aligned, and build better - <span class="text-acсent text-accent__pink">together</span></strong>
           <h3 class="h3 h3__regular">This resource contains all viewports versions for a landing page template based on components.</h3>
         </div>
@@ -185,5 +198,6 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
