@@ -1,3 +1,3 @@
-## Descripton: HTML + CSS layout
+### Descripton: HTML + CSS layout
 
-## Deploy: https://dairinka.github.io/quickit_layout/
+### <a href="https://dairinka.github.io/quickit_layout/">Deploy ↗</a>
