@@ -56,18 +56,17 @@ sup {
 img {
   border-style: none;
 }
-button,input,optgroup,select,textarea {
+ button,input,optgroup,select,textarea {
   font-family: inherit;
-  font-size: 100%;
-  line-height: 1.5;
   margin: 0;
-}
+} 
 button,input {
   color: inherit;
-}
-button,select {
+} 
+ /* button,select {
   text-transform: none;
-}
+} */
+/*
 button,[type="button"],[type="reset"],[type="submit"] {
   -webkit-appearance: button;
 }
@@ -83,7 +82,7 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
+} */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
